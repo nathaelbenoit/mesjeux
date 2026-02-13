@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <rect fill="#FFFFFF" width="400" height="600"/>
+  <text x="200" y="150" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333333">Wii</text>
+  <circle cx="200" cy="320" r="80" fill="rgba(51,51,51,0.1)"/>
+  <text x="200" y="330" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#333333" opacity="0.3">👾</text>
+  <text x="200" y="480" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#333333" opacity="0.8">Image non disponible</text>
+</svg>

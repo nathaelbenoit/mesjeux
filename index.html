@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Collection de Jeux</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🎮 MES JEUX</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav-link active" data-console="all">Tous</a>
+                    <a href="#" class="nav-link" data-console="switch">Switch</a>
+                    <a href="#" class="nav-link" data-console="3ds">3DS</a>
+                    <a href="#" class="nav-link" data-console="ds">DS</a>
+                    <a href="#" class="nav-link" data-console="wiiu">Wii U</a>
+                    <a href="#" class="nav-link" data-console="wii">Wii</a>
+                </nav>
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un jeu...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Ma Collection</h2>
+                <p class="hero-subtitle" id="gameCount">0 jeux au total</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🎮</div>
+                    <div class="stat-value" id="totalGames">0</div>
+                    <div class="stat-label">Jeux Total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👾</div>
+                    <div class="stat-value" id="consoleCount">5</div>
+                    <div class="stat-label">Consoles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎮</div>
+                    <div class="stat-value" id="switchGames">0</div>
+                    <div class="stat-label">Jeux Switch</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-value" id="series">0</div>
+                    <div class="stat-label">Séries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sort Section -->
+    <section class="sort-section">
+        <div class="container">
+            <div class="sort-controls">
+                <label class="sort-label">Trier par:</label>
+                <div class="sort-buttons">
+                    <button class="sort-btn active" data-sort="default">Par défaut</button>
+                    <button class="sort-btn" data-sort="title-asc">Titre (A-Z)</button>
+                    <button class="sort-btn" data-sort="title-desc">Titre (Z-A)</button>
+                    <button class="sort-btn" data-sort="year-desc">Année (+ récent)</button>
+                    <button class="sort-btn" data-sort="year-asc">Année (+ ancien)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-genre="all">Tous les genres</button>
+                <button class="filter-btn" data-genre="action">Action</button>
+                <button class="filter-btn" data-genre="adventure">Aventure</button>
+                <button class="filter-btn" data-genre="rpg">RPG</button>
+                <button class="filter-btn" data-genre="sport">Sport</button>
+                <button class="filter-btn" data-genre="platform">Plateforme</button>
+                <button class="filter-btn" data-genre="fighting">Combat</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Grid -->
+    <section class="games-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎬 Collection</h2>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/>
+                        </svg>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="gamesGrid" class="games-grid">
+                <!-- Les jeux seront injectés ici par JavaScript -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>Aucun jeu trouvé</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ma Collection de Jeux</h3>
+                    <p>Une collection personnelle de jeux vidéo Nintendo</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Consoles</h4>
+                    <ul>
+                        <li>Nintendo Switch</li>
+                        <li>Nintendo 3DS</li>
+                        <li>Nintendo DS</li>
+                        <li>Wii U</li>
+                        <li>Wii</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Statistiques</h4>
+                    <ul>
+                        <li><span id="footerTotal">0</span> jeux au total</li>
+                        <li>5 consoles différentes</li>
+                        <li>Développé avec ❤️</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Ma Collection de Jeux</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Detail Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modalBody">
+                <!-- Contenu dynamique -->
+            </div>
+        </div>
+    </div>
+
+    <script src="games-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
