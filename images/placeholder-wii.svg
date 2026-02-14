@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
-  <rect fill="#FFFFFF" width="400" height="600"/>
-  <text x="200" y="150" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333333">Wii</text>
-  <circle cx="200" cy="320" r="80" fill="rgba(51,51,51,0.1)"/>
-  <text x="200" y="330" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#333333" opacity="0.3">👾</text>
-  <text x="200" y="480" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#333333" opacity="0.8">Image non disponible</text>
+  <rect fill="#FFF7E2" width="400" height="600"/>
+  <rect fill="#4F633D" width="400" height="90"/>
+  <rect x="24" y="120" width="352" height="440" rx="18" fill="#ffffff" stroke="#d4cbb8" stroke-width="2"/>
+  <text x="200" y="45" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Wii</text>
+  <circle cx="200" cy="330" r="90" fill="rgba(79,99,61,0.12)"/>
+  <text x="200" y="340" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="700" fill="#3d4d2f" opacity="0.25">👾</text>
+  <text x="200" y="500" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#5a6b4d" opacity="0.9">Image non disponible</text>
 </svg>
